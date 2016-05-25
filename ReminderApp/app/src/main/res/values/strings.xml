@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Reminder</string>
     <string name="search_title">Search</string>
+    <string name="menu_item_notification">Напоминания</string>
+    <string name="view_navigation_open">OPEN</string>
+    <string name="view_navigation_close">CLOSE</string>
 </resources>
