@@ -11,8 +11,10 @@ import android.view.MenuItem;
  */
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+        setTheme(R.style.AppDefault);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -31,6 +33,4 @@ public class MainActivity extends AppCompatActivity {
 
         toolbar.inflateMenu(R.menu.menu);
     }
-
-
 }
