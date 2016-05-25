@@ -1,4 +1,4 @@
-package kz.alisher.reminder;
+package kz.alisher.reminder.utils;
 
 /**
  * Created by Alisher Kozhabay on 25.05.2016.

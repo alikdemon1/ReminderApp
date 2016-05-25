@@ -1,5 +1,6 @@
 package kz.alisher.reminder.fragment;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -12,15 +13,15 @@ import kz.alisher.reminder.R;
 /**
  * Created by Alisher Kozhabay on 25.05.2016.
  */
-public class ExampleFragment extends Fragment {
+public class BirthdayFragment extends AbstractTabFragment {
     private static final int LAYOUT = R.layout.fragment_example;
-    private View view;
 
-    public static ExampleFragment getInstance(){
+    public static BirthdayFragment getInstance(Context context) {
         Bundle args = new Bundle();
-        ExampleFragment fragment = new ExampleFragment();
+        BirthdayFragment fragment = new BirthdayFragment();
         fragment.setArguments(args);
-
+        fragment.setCtx(context);
+        fragment.setTitle(context.getString(R.string.tab_bithdays));
         return fragment;
     }
 
@@ -31,4 +32,5 @@ public class ExampleFragment extends Fragment {
 
         return view;
     }
+
 }

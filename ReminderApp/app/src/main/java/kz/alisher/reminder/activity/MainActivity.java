@@ -1,4 +1,4 @@
-package kz.alisher.reminder;
+package kz.alisher.reminder.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,7 +11,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
+import kz.alisher.reminder.R;
 import kz.alisher.reminder.adapter.TabsPagerFragmentAdapter;
+import kz.alisher.reminder.utils.Constants;
 
 /**
  * Created by Alisher Kozhabay on 25.05.2016.
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private void initTabs() {
         viewPager = (ViewPager) findViewById(R.id.viewPager);
 
-        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
+        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(this, getSupportFragmentManager());
         viewPager.setAdapter(adapter);
 
         TabLayout tableLayout = (TabLayout) findViewById(R.id.tabLayout);
